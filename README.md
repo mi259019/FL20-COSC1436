@@ -8,7 +8,7 @@ The goal is for you to
   <li>successfully add a function to the FL20-COSC1436.cpp program</li>
   <li>add your function prototype</li>
   <li>and add the call to your function so that the program works successfully.</li>
-
+</ol>
 If your changes are accepted, they will be added to the final source code on Github and appear on any other fork that occurs from the main branch.
 
 Start early and keep moving forward. Almost done.
