@@ -13,5 +13,5 @@ If your changes are accepted, they will be added to the final source code on Git
 
 Start early and keep moving forward. Almost done.
 
-Smiley
+Smiley<br />
 <a href="mailto: steve.smiley@my.tccd.edu">steve.smiley@my.tccd.edu</a>
