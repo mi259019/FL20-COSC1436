@@ -22,7 +22,7 @@ string semester = "Fall 2020";
 void showMenu();
 void menu24Smiley(int);
 void menu21Tourkakis();
-
+void menu10GuerreroRivas();
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
 // ***************************************************************
@@ -73,6 +73,7 @@ int main()
             case 9:                 // Garcia - call to function goes here
                 break;
             case 10:                 // Guerrero Rivas - call to function goes here
+                menu10GuerreroRivas();
                 break;
             case 11:                 // Harerimana - call to function goes here
                 break;
@@ -171,6 +172,21 @@ void menu21Tourkakis()
     cout << "Hello World" << endl;
     cout << endl;
 }
+
+void menu10GuerreroRivas()
+{
+    int RandomNumber;
+    unsigned seed = time(0);
+    srand(seed);
+
+    const int MIN_VALUE = 0;
+    const int MAX_VALUE = 100;
+
+    RandomNumber = rand() % (MAX_VALUE - MIN_VALUE + 1) + MIN_VALUE;
+
+    cout << " a random number between 0 and 100 is " << RandomNumber << "." << endl;
+}
+    
 // *****************************************************************************************
 // MENU ID:          24
 // FUNCTION:         menu24Smiley
