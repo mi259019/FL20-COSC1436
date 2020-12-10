@@ -21,6 +21,7 @@ string semester = "Fall 2020";
 
 void showMenu();
 void menu24Smiley(int);
+void menu6Dominguez(int);
 
 
 // ***************************************************************
@@ -65,6 +66,7 @@ int main()
             case 5:                 // Dodd - call to function goes here
                   break;
             case 6:                 // Dominguez - call to function goes here
+                  menu6Dominguez();
                   break;
             case 7:                 // Fanta - call to function goes here
                   break;
@@ -212,4 +214,137 @@ void menu24Smiley(int numberOfTimes)
 
    cout << endl;
    cout << endl;
+}
+
+// *****************************************************************************************
+// MENU ID:          6
+// FUNCTION:         menu6Dominguez
+// DESCRIPTION:      This program while find the average of three grades.
+// OUTPUT EXAMPLE:   User enters: 90 99 95
+//                   Program outputs the following:
+//                   Congraulations, you passed with an A!
+//                   (Really happy face computer)
+// *****************************************************************************************
+void menu6Dominguez(int)
+{
+      int grade1;             //holds the first grade choice
+      int grade2;             //holds the second grade choice
+      int grade3;             //holds the third grade choice
+      int finalGrade;         //holds final grade choice to display computer
+      float average;	      // holds the grade average
+
+// Intro to Program.
+      cout << "Welcome to Ivan Dominguez's Program!\n"
+           << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+           << "Today we will calculate your final grade.\n"
+           << "Please enter your three grades. (0-100)\n";
+	cin  >> grade1 >> grade2 >> grade3;
+
+// Math section, and average print out.
+      average = ( grade1 + grade2 + grade3 )/3;
+
+	if (average <=100 && average >= 90)
+      {
+            finalGrade = 1;
+		cout << "Congraulations, you passed with an A!\n";
+      }
+
+	else if (average >= 80 && average < 90)
+      {
+		cout << "Congraulations, you passed with a B!\n";
+            finalGrade = 2;
+      }
+
+	else if (average >= 70 && average < 80)
+      {
+            cout << "Whew, you passed with a C!\n";
+            finalGrade = 3;
+      }
+
+	else if (average >= 0 && average < 70)
+      {
+		cout << "You failed.\n";
+            finalGrade = 4;
+      }
+
+       else if (average > 100 || average < 0)
+      {
+            cout << "Invaild data\n";
+      }
+      
+// Computer print out.
+      switch (finalGrade)
+      {
+            case 1:     // Call to really happy face computer.
+                  cout  << "      .--------------------.    \n"
+                        << "      |.-````````````````-.|    \n"
+                        << "      ||     ^      ^     ||    \n"
+                        << "      ||    (O)    (O)    ||    \n"
+                        << "      ||        <         ||    \n"
+                        << "      ||    (        )    ||    \n"
+                        << "      ||     (______)     ||    \n"
+                        << "      |'-________________-'|    \n"
+                        << "      `-------)___(-------`     \n"
+                        << "       _________________        \n"
+                        << "      /::::::::::::::::/        \n"
+                        << "     /::::========::::/         \n"
+                        << "    `~~~~~~~~~~~~~~~~`          \n";
+                  break;
+
+            case 2:     // Call to happy face computer.
+                  cout  << "      .--------------------.    \n"
+                        << "      |.-````````````````-.|    \n"
+                        << "      ||     ^      ^     ||    \n"
+                        << "      ||    (O)    (O)    ||    \n"
+                        << "      ||        <         ||    \n"
+                        << "      ||                  ||    \n"
+                        << "      ||     (______)     ||    \n"
+                        << "      |'-________________-'|    \n"
+                        << "      `-------)___(-------`     \n"
+                        << "       _________________        \n"
+                        << "      /::::::::::::::::/        \n"
+                        << "     /::::========::::/         \n"
+                        << "    `~~~~~~~~~~~~~~~~`          \n";
+                  break;   
+
+            case 3:     // Call to plain face computer.
+                  cout  << "      .--------------------.    \n"
+                        << "      |.-````````````````-.|    \n"
+                        << "      ||     -      -     ||    \n"
+                        << "      ||    (o)    (o)    ||    \n"
+                        << "      ||        <         ||    \n"
+                        << "      ||                  ||    \n"
+                        << "      ||    ----------    ||    \n"
+                        << "      |'-________________-'|    \n"
+                        << "      `-------)___(-------`     \n"
+                        << "       _________________        \n"
+                        << "      /::::::::::::::::/        \n"
+                        << "     /::::========::::/         \n"
+                        << "    `~~~~~~~~~~~~~~~~`          \n";
+                  break;
+
+            case 4:     // Call to bad face computer.                  
+                  cout  << "      .--------------------.    \n"
+                        << "      |.-````````````````-.|    \n"
+                        << "      ||     v      v     ||    \n"
+                        << "      ||    (x)    (x)    ||    \n"
+                        << "      ||        <         ||    \n"
+                        << "      ||                  ||    \n"
+                        << "      ||    (~~~~~~~~)    ||    \n"
+                        << "      |'-________________-'|    \n"
+                        << "      `-------)___(-------`     \n"
+                        << "       _________________        \n"
+                        << "      /::::::::::::::::/        \n"
+                        << "     /::::========::::/         \n"
+                        << "    `~~~~~~~~~~~~~~~~`          \n";
+
+                  break;
+      }
+
+//Program exit.
+      cout << "\n";
+      cout << "Thank for using the Ivan Dominguez's Program.\n";
+      cout << "Have a nice day!\n";
+
+return 0;
 }
