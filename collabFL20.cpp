@@ -172,7 +172,14 @@ void menu21Tourkakis()
     cout << "Hello World" << endl;
     cout << endl;
 }
-
+// *****************************************************************************************
+// MENU ID:          10
+// FUNCTION:         menu10GuerreroRivas
+// DESCRIPTION:      prints a random integer value between 0 and 100.
+// OUTPUT EXAMPLE:   "a random number between 0 and 100 is 45." 
+//                   --'45' being the random integer chosen by the program---
+//                     
+// *****************************************************************************************
 void menu10GuerreroRivas()
 {
     int RandomNumber;
