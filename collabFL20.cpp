@@ -22,6 +22,7 @@ string semester = "Fall 2020";
 void showMenu();
 void menu24Smiley(int);
 void menu21Tourkakis();
+void menu6Dominguez(int);
 void menu10GuerreroRivas();
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
@@ -65,6 +66,7 @@ int main()
             case 5:                 // Dodd - call to function goes here
                 break;
             case 6:                 // Dominguez - call to function goes here
+		menu6Dominguez();
                 break;
             case 7:                 // Fanta - call to function goes here
                 break;
