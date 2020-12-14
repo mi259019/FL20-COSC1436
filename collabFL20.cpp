@@ -24,6 +24,7 @@ void menu24Smiley(int);
 void menu6Dominguez();
 void menu22Turcios();
 void menu21Tourkakis();
+void menu8Fuentes();
 
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
@@ -72,7 +73,8 @@ int main()
             case 7:                 // Fanta - call to function goes here
                 break;
             case 8:                 // Fuentes - call to function goes here
-                break;
+                menu8Fuentes();
+				break;
             case 9:                 // Garcia - call to function goes here
                 break;
             case 10:                 // Guerrero Rivas - call to function goes here
@@ -371,4 +373,47 @@ void menu22Turcios()
     cout << "                         " << endl;
 
 }
+// *****************************************************************************************
+// MENU ID:          8
+// FUNCTION:         menu8Fuentes
+// DESCRIPTION:      calculates the area of any regular polygon
+// OUTPUT EXAMPLE:   User enters 4, 2
+//                   Program outputs the following:
+//                      4
+// *****************************************************************************************
+void menu8Fuentes()
+{
+    int sidesNum;
+    double sidesLength;
+    double area;
+    const double PI = 2 * acos(0);  // Calculates pi for maximum precision
 
+    cout << "Welcome." << endl;                                                 // Introduction
+    cout << "This program can find the area of any regular polygon." << endl;
+    cout << "Enter the amount of sides and the length of each side, "
+        << "and I will find the area of the polygon" << endl;
+
+    cout << "Number of sides:" << endl;
+    cin >> sidesNum;
+    while (sidesNum <= 0)
+    {
+        cin.clear();            // Clears and ignores to discard bad input
+        cin.ignore(100, '\n');
+        cout << "That's not going to make a shape. Please enter an integer greater than 0" << endl;
+        cin >> sidesNum;
+    }
+
+    cout << "Length of each side:" << endl;
+    cin >> sidesLength;
+    while (sidesLength <= 0)
+    {
+        cin.clear();            // Clears and ignores to discard bad input
+        cin.ignore(100, '\n');
+        cout << "That's not going to make a shape. Please enter a number greater than 0" << endl;
+        cin >> sidesLength;
+    }
+
+    area = (pow(sidesLength, 2) * sidesNum) / (4 * tan(PI / sidesNum));     // Formula to calculate area
+                                                                            // of polygon
+    cout << "The area of your polygon is " << area << " square units" << endl;
+}
