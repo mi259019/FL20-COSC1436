@@ -21,6 +21,7 @@ string semester = "Fall 2020";
 
 void showMenu();
 void menu24Smiley(int);
+void menu16Smith(int);
 
 
 // ***************************************************************
@@ -85,7 +86,8 @@ int main()
             case 15:                 // Shrestha - call to function goes here
                   break;
             case 16:                 // Smith - call to function goes here
-                  break;
+                  menu16Smith();
+               break;
             case 17:                 // Soepangat - call to function goes here
                   break;
             case 18:                 // Souhala - call to function goes here
@@ -212,4 +214,50 @@ void menu24Smiley(int numberOfTimes)
 
    cout << endl;
    cout << endl;
+}
+
+
+// *****************************************************************************************
+// MENU ID:          16
+// FUNCTION:         menu16Smith
+// DESCRIPTION:      Prints ASCII Picture 
+// OUTPUT SAMPLE:    Christmas Tree
+// *****************************************************************************************
+
+
+void menu16Smith()
+   
+{
+cout << " *     *  MERRY CHRISTMAS!! *    *" << endl;
+cout << "      *     *        *      *" << endl;
+cout << "    *    *       ##      *    *" << endl;
+cout << "  *    *       #    #  *    *    *" << endl;
+cout << "     *    *     #  #      *    *" << endl;
+cout << "   *     *       ||     *    *" << endl;
+cout << " *     *   *    @||@  *    *    *" << endl;
+cout << "   *  *        |||@||    *    *" << endl;
+cout << " *       *    |@||||@|  *        *" << endl;
+cout << "    *        ||||||||||      *" << endl;
+cout << "  *    *    | @||||||@ |   *    *" << endl;
+cout << "             ||||@|||||" << endl;
+cout << "            |@||||||||@|" << endl;
+cout << "           ||||@||||@||||" << endl;
+cout << "          @||||||||||||||@" << endl;
+cout << "         ||||@||||||||@||||" << endl;
+cout << "        ||@|||||||@|||||||@||" << endl;
+cout << "       | |||||@||||||||@|||| |" << endl;  
+cout << "        |||@|||||||@|||||||@|" << endl;
+cout << "       ||||||||@||||||||@|||||" << endl;
+cout << "      @|||||@||||||@||||||||||@" << endl;
+cout << "     ||||@|||||@||||||@|||||@|||" << endl;
+cout << "    |||||||||||||||||||||||||||||" << endl;
+cout << "   @|||@|||@||||||@|||||||@|||@||@" << endl;
+cout << "                !!!!!" << endl;
+cout << " ____%____      !!!!!" << endl;
+cout << " |       |      !!!!!" << endl;
+cout << " |       |      !!!!!   ____%*%_____  " << endl;
+cout << " |       |      !!!!!  |            |" << endl;
+cout << " |_______|      !!!!!  |_________ __|" << endl;
+
+   
 }
